@@ -1,5 +1,3 @@
--- shallow embedding
-
 newtype Polynomial = Polynomial { app :: Integer -> Integer }
 
 addP :: Polynomial -> Polynomial -> Polynomial
@@ -19,3 +17,6 @@ sumNotation xs = Polynomial $
 
 
 -- Geben Sie zwei verschiedene Terme an, die das Polynom 'x - x^3' beschreiben
+
+
+-- Implementieren Sie ein diese EDSL als Deep Embedding (incl Funktion app)

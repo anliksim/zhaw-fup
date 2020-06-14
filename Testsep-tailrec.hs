@@ -6,3 +6,5 @@ sumT :: Num a => Tree a -> a
 sumT (Leaf a) = a
 sumT (Node a l r) = a + (sumT l) + (sumT r)
 
+
+-- Implementieren Sie eine Endrekursive Variante der Funktion 'sumT'
