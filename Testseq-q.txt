@@ -1,0 +1,10 @@
+Erklären Sie "partielle Andwendung (partial application)" und erläutern Sie kurz, wieso dies für die funktionale Programmierung wichtig ist:
+
+
+Welche der folgenden Terme besitzen eine beta-Normalform?
+
+(Lx.x(Lx.(x x)Lx.(x x)))
+(Lx.(x x)Lx.(x x))
+(Lx.y(Lx.(x x)Lx.(x x)))
+(Lx.(x y)Lz.z)
+

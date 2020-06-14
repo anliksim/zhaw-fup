@@ -14,3 +14,8 @@ sumNotation xs = Polynomial $
     where
         xsIndexed = zip xs [0..]
 
+
+-- Welcher Term entspricht dem Polynom 'x^2+2'
+
+
+-- Geben Sie zwei verschiedene Terme an, die das Polynom 'x - x^3' beschreiben

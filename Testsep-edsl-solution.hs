@@ -17,12 +17,13 @@ sumNotation xs = Polynomial $
 
 -- Welcher Term entspricht dem Polynom 'x^2+2'
 
---    (+)   (1 * x^2)   (2 * x^1)
+--    (+)  (1*x^2)     (2*x^1)
 a1 = addP (monome 1 2) (monome 2 0)
-
 
 -- Geben Sie zwei verschiedene Terme an, die das Polynom 'x - x^3' beschreiben
 
---    (+)   (1 * x^2)   (2 * x^1)
-a21 = addP (monome 1 1) (monome 1 1)
-a22
+--    (+)  (1*x^1)      (-1*x^3)
+a21 = addP (monome 1 1) (monome (-1) 3)
+
+--    (+) (0*x^0) (1*x^1) (0*x^2) (-1*x^3)
+a22 = sumNotation [0,1,0,(-1)]
