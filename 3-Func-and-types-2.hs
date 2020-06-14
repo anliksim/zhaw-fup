@@ -67,7 +67,7 @@ many n f = f . many (n-1) f
 -- many 5 (\x -> x + x) 2
 
 
--- Partielle Funktoin
+-- Partielle Funktion
 
 -- gibt eventuell für gewisse Eingabe keinen Funktionswert zurück
 -- z.B. f(x,y) = x/y

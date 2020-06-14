@@ -1,0 +1,47 @@
+Erklären Sie "partielle Andwendung (partial application)" und erläutern Sie kurz, wieso dies für die funktionale Programmierung wichtig ist:
+
+> Partielle Anwendung ist wenn man eine mehrstellig (curried) Funktion nicht erschöpfend mit Argumenten versieht. So wird z.B. aus einer 4-stelligen Funktion eine 3-stellig Funktion mit einem 'fixen' Argument. So können wir z.B eine Endrekursive Funktion bereitstellen, für welche der Akkumulator oder die Continuation schon vorgegeben ist.
+
+
+Welche der folgenden Terme besitzen eine beta-Normalform?
+
+1 (Lx.x(Lx.(x x)Lx.(x x)))
+2 (Lx.(x x)Lx.(x x))
+3 (Lx.y(Lx.(x x)Lx.(x x)))
+4 (Lx.(x y)Lz.z)
+
+
+1 >
+
+(Lx.x(Lx.(x x)Lx.(x x)))
+-- ^ beta-Reduktion (normal order reduction)
+(Lx.(x x)Lx.(x x))
+
+--> nicht beta-Normalform
+
+2 >
+
+(Lx.(x x)Lx.(x x))
+-- ^ beta-Reduktion (normal order reduction)
+(Lx.(x x)Lx.(x x))
+
+--> nicht beta-Normalform
+
+3 >
+
+(Lx.y(Lx.(x x)Lx.(x x)))
+-- ^ beta-Reduktion (normal order reduction)
+y
+
+--> beta-Normalform
+
+4 >
+
+(Lx.(x y)Lz.z)
+-- ^ beta-Reduktion (normal order reduction)
+(Lz.z y)
+-- ^ delta-Reduktion (normal order reduction)
+y
+
+--> beta-Normalform
+

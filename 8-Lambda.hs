@@ -111,7 +111,7 @@ yTerm =
 
 -- beta-Reduktion: Übergang von (Lx.A B) zu A[x:=B] mit beta-Konversion
 
--- beta-Redex: Term auf den wir beta-Reduktion anwenden könen
+-- beta-Redex: Term auf den wir beta-Reduktion anwenden können
 
 -- beta-Normalform: Wenn kein beta-Redex als Teilterm und keine delta-Reduktion mehr möglich
 
