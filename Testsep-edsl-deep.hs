@@ -30,7 +30,6 @@ eval (SumNotation xs) = \x -> sum (map (\(c,e) -> c*x^e) xsIndexed)
       where
           xsIndexed = zip xs [0..]
 
-
 -- function
 pfun = (\x -> x * x + x)
 
