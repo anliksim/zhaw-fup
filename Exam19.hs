@@ -81,42 +81,19 @@ last2 = head . reverse
 
 -- (b)
 
--- (i)
+-- Normal order reduction:
 --
--- (Lx.(x x) y)
---  ^ beta-Reduktion (normal order)
--- (y y)
---
--- > beta-Normalform
-
-
--- (ii)
---
--- (y Lx.(x x))
---
--- > beta-Normalform?
-
-
--- (iii)
---
--- (Lx.(x x x) Lx.(x x x))
---
--- > nicht beta-Normalform
+-- (Lx.(x y)Lz.z)
+--  ^ beta-Reduktion
+-- (Lz.z y)
+--  ^ delta-Reduktion
+-- y
 
 
 -- (c)
 
--- t = (((Lxyz.((x y) (xz)) Lx.a) b) c)
+-- Nur mit normal order reduction:
+-- (Lx.y(Lz.(z z z)Lz.(z z z)))
 
--- (i)
--- a,b,c
-
--- (ii)
---
--- (((Lxyz.((x y) (x z)) Lx.a) b) c)
--- ((Lyz.((Lx.a y) (Lx.a z)) b) c)
--- ((Lx.a b) (Lx.a c))
--- (a (Lx.a c))
--- (a a)
-
-
+-- Gar nicht:
+-- (Lz.(z z)Lz.(z z))
