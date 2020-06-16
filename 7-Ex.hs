@@ -1,3 +1,5 @@
+-- Aufgabe 1
+
 data Tree a
     = Leaf a
     | Node a (Tree a) (Tree a)
@@ -17,3 +19,4 @@ depthTR t = depthTR_ (const 0) [t]
       depthTR_ cont [] = cont ()
       depthTR_ cont ((Node _ tl tr):ts) = depthTR_ cont (tl:tr:ts)
       depthTR_ cont ((Leaf _):ts) = depthTR_ (\x -> 1 + (cont x)) ts
+
